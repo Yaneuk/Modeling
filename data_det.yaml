@@ -1,0 +1,17 @@
+# 2단계: 탐지 모델용 데이터셋 설정
+# 폴더 구조:
+#   dataset/detection/train/images/, dataset/detection/train/labels/
+#   dataset/detection/val/...
+#   dataset/detection/test/...
+
+path: /workspace/dataset/detection
+
+train: train
+val:   val
+test:  test
+
+nc: 3
+names:
+  0: reusable   # 재사용
+  1: recycle    # 재활용
+  2: dispose    # 폐기
